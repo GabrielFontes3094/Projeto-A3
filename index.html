@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnhemBeef</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="data:image/png;base64,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">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Fontes Barroso">
+    <meta property="og:title" content="Gabriel Fontes">
+    <meta property="og:description" content="AnhenBeef">
+    <meta property="og:image" content="data:image/png;base64,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">
+    <meta property="og:url" content="https://static.vecteezy.com/ti/vetor-gratis/p1/26620800-uzumaki-cla-simbolo-naruto-gratis-vetor.jpg">
+    <link rel="icon" type="image/png" href="https://static.vecteezy.com/ti/vetor-gratis/p1/26620800-uzumaki-cla-simbolo-naruto-gratis-vetor.jpg">
+  </head>
+<body>
+    <main>
+      <nav class="main-menu">
+        <h1>Food App</h1>
+        <img class="logo" src="data:image/png;base64,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" alt="" />
+        <ul>
+          <li class="nav-item active">
+            <b></b>
+            <b></b>
+            <a href="#">
+              <span class="nav-text">Home</span>
+              <img src="icon/botao-home.png" alt="">
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <b></b>
+            <b></b>
+            <a href="pages/info.html">
+              <span class="nav-text">Profile</span>
+              <img src="icon/do-utilizador.png" alt="">
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <b></b>
+            <b></b>
+            <a href="pages/about.html">
+              <span class="nav-text">Info</span>
+              <img src="icon/informacoes.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="content">
+        <div class="top-content">
+            <pre>Anhembeef   Uzumaki</pre>
+            <img src="logo/uzumaki-vermelho.png" alt="logo uzumaki" id="logoUzumaki">
+        </div>
+        <div class="left-content">
+          <div class="activities">
+            <h1>Comidas Populares</h1>
+            <div class="activity-container">
+              <div class="image-container img-one">
+                <img src="https://www.sushimanadomicilio.com.br/wp-content/uploads/2018/06/guioza-para-festa.jpg" alt="Guioza" />
+                <div class="overlay">
+                  <h3>Guioza</h3>
+                </div>
+              </div>
+
+              <div class="image-container img-two">
+                <img src="https://www.sushimanadomicilio.com.br/wp-content/uploads/2016/02/Hossomaki-para-festa.jpg" alt="Hossomaki" />
+                <div class="overlay">
+                  <h3>Hossomaki</h3>
+                </div>
+              </div>
+
+              <div class="image-container img-three">
+                <img src="https://www.sushimanadomicilio.com.br/wp-content/uploads/2023/01/rolinho-primavera.jpg" alt="Primavera" />
+                <div class="overlay">
+                  <h3>Rolinho Primavera</h3>
+                </div>
+              </div>
+
+              <div class="image-container img-four">
+                <img src="https://www.sushimanadomicilio.com.br/wp-content/uploads/2016/02/Sashimi-festa.jpg" alt="Sashimis" />
+                <div class="overlay">
+                  <h3>Sashimis</h3>
+                </div>
+              </div>
+
+              <div class="image-container img-five">
+                <img src="https://www.sushimanadomicilio.com.br/wp-content/uploads/2016/02/Comida-japonesa-niguiri.jpg" alt="Niguiri" />
+                <div class="overlay">
+                  <h3>Niguiri</h3>
+                </div>
+              </div>
+
+              <div class="image-container img-six">
+                <img src="https://ogimg.infoglobo.com.br/in/25091733-abd-cc0/FT1086A/WhatsApp-Image-2021-07-05-at-14.23.35.jpeg.jpg" alt="Lamen" />
+                <div class="overlay">
+                  <h3>Lamen</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="left-bottom">
+            <div class="weekly-schedule">
+              <h1>Grupos Turismo</h1>
+              <div class="calendar">
+                <div class="day-and-activity activity-one">
+                  <div class="day">
+                    <h1>13</h1>
+                    <p>Seg</p>
+                  </div>
+                  <div class="activity">
+                    <h2>Comidas Raivosas</h2>
+                    <div class="participants">
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/c61daa1c-5881-43f8-a50f-62be3d235daf" style="--i: 1" alt="" />
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/90affa88-8da0-40c8-abe7-f77ea355a9de" style="--i: 2" alt="" />
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/07d4fa6f-6559-4874-b912-3968fdfe4e5e" style="--i: 3" alt="" />
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/e082b965-bb88-4192-bce6-0eb8b0bf8e68" style="--i: 4" alt="" />
+                    </div>
+                  </div>
+                  <button class="btn">Entrar</button>
+                </div>
+
+                <div class="day-and-activity activity-two">
+                  <div class="day">
+                    <h1>15</h1>
+                    <p>Ter</p>
+                  </div>
+                  <div class="activity">
+                    <h2>Bons de Barrigas</h2>
+                    <div class="participants">
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/c61daa1c-5881-43f8-a50f-62be3d235daf" style="--i: 1" alt="" />
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/32037044-f076-433a-8a6e-9b80842f29c9" style="--i: 2" alt="" />
+                    </div>
+                  </div>
+                  <button class="btn">Entrar</button>
+                </div>
+
+                <div class="day-and-activity activity-three">
+                  <div class="day">
+                    <h1>17</h1>
+                    <p>Qua</p>
+                  </div>
+                  <div class="activity">
+                    <h2>Igualmente insaciáveis</h2>
+                    <div class="participants">
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/32037044-f076-433a-8a6e-9b80842f29c9" style="--i: 1" alt="" />
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/e082b965-bb88-4192-bce6-0eb8b0bf8e68" style="--i: 2" alt="" />
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/c61daa1c-5881-43f8-a50f-62be3d235daf" style="--i: 3" alt="" />
+                    </div>
+                  </div>
+                  <button class="btn">Entrar</button>
+                </div>
+
+                <div class="day-and-activity activity-four">
+                  <div class="day">
+                    <h1>18</h1>
+                    <p>Sex</p>
+                  </div>
+                  <div class="activity">
+                    <h2>Hiking</h2>
+                    <div class="participants">
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/07d4fa6f-6559-4874-b912-3968fdfe4e5e" style="--i: 1" alt="" />
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/32037044-f076-433a-8a6e-9b80842f29c9" style="--i: 2" alt="" />
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/07d4fa6f-6559-4874-b912-3968fdfe4e5e" alt="" />
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/c61daa1c-5881-43f8-a50f-62be3d235daf" style="--i: 4" alt="" />
+                      <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/90affa88-8da0-40c8-abe7-f77ea355a9de" style="--i: 5" alt="" />
+                    </div>
+                  </div>
+                  <button class="btn">Entrar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="personal-bests">
+              <h1>Lugares Visitados</h1>
+              <div class="personal-bests-container">
+                <div class="best-item box-one">
+                  <p>TAUBATÉ - SP: 10/05/2024</p>
+                  <img src="https://kanpek.com.br/wp-content/uploads/2016/02/cropped-logo-kanpek2.png" alt="" />
+                </div>
+                <div class="best-item box-two">
+                  <p>Pirituba - SP: 24/04/2017</p>
+                  <img src="https://nakajymasushi.com.br/wp-content/uploads/2021/08/logo-nakajyma.png" alt="" />
+                </div>
+                <div class="best-item box-three">
+                  <p>Itaim Bibi - SP: 15/09/2014</p>
+                  <img src="https://static.wixstatic.com/media/0b1a69_0bef10bce7b84af288598697cba83680~mv2.png/v1/fill/w_137,h_137,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/SASSA_LOGO-4.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-content">
+          <div class="user-info">
+            <div class="icon-container">
+              <i class="fa fa-bell nav-icon"></i>
+              <i class="fa fa-message nav-icon"></i>
+            </div>
+            <h4>Julia Ferreira</h4>
+            <img src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/40b7cce2-c289-4954-9be0-938479832a9c" alt="user" />
+          </div>
+
+          <div class="mobile-personal-bests">
+            <h1>Lugares Visitados</h1>
+            <div class="personal-bests-container">
+              <div class="best-item box-one">
+                <p>TAUBATÉ - SP: 10/05/2024</p>
+                <img src="https://kanpek.com.br/wp-content/uploads/2016/02/cropped-logo-kanpek2.png" alt="" />
+              </div>
+              <div class="best-item box-two">
+                <p>Pirituba - SP: 24/04/2017</p>
+                <img src="https://nakajymasushi.com.br/wp-content/uploads/2021/08/logo-nakajyma.png" alt="" />
+              </div>
+              <div class="best-item box-three">
+                <p>Itaim Bibi - SP: 15/09/2014</p>
+                <img src="https://static.wixstatic.com/media/0b1a69_0bef10bce7b84af288598697cba83680~mv2.png/v1/fill/w_137,h_137,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/SASSA_LOGO-4.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="friends-activity">
+            <h1>Ativividade</h1>
+            <div class="card-container">
+              <div class="card">
+                <div class="card-user-info">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX7uuXdeyRxdhbT55o1OAyxptNkXCO0u1708ykK7YRpA&s" alt="" />
+                  <h2>Jane</h2>
+                </div>
+                <img class="card-img" src="https://i.pinimg.com/originals/a8/ee/66/a8ee669aad025d464207ad4b00ed7adb.jpg" alt="" />
+                <p>Comida japonesa que aquece o coração e satisfaz a alma! 🍱❤️</p>
+              </div>
+
+              <div class="card card-two">
+                <div class="card-user-info">
+                  <img src="https://i.pinimg.com/originals/fd/fc/ef/fdfcefc24e58a4e3ed4dd6099d530353.png" alt="" />
+                  <h2>Mike</h2>
+                </div>
+                <img class="card-img" src="https://i.pinimg.com/736x/c6/d6/cc/c6d6cc563973fe1fc538bcde086446a5.jpg" alt="" />
+                <p>Um verdadeiro banquete! 🥢🥵</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
